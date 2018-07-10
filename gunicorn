@@ -1,0 +1,17 @@
+server {
+    listen 80;
+    server_name 178.62.38.164;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/karatov/Portfolio-project;
+    }
+    location /media/ {
+        root /home/karatov/Portfolio-project;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/karatov/Portfolio-project/portfolio.sock;
+    }
+}

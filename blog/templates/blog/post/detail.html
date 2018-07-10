@@ -1,0 +1,59 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <div class="panel panel-default shadow">
+    <div class="panel-heading"><h1>{{ post.title }}</h1></div>
+    <div class="panel-body">
+    <img class="rounded pull-right img-responsive ml-5 mb-4" alt="blog image" style="width:200px" src="{{ post.image.url }}"/>
+
+    <p class="date">Published {{ post.publish }} by {{ post.author }}</p><br/><br/>
+    {{ post.body|markdown }}
+
+    <br/><br/>
+    <a class="btn btn-primary" href="{% url "blog:post_share" post.id %}"><i class="glyphicon glyphicon-share"></i> Share this post by e-mail</a>
+          </div>
+    </div>
+    <div class="panel panel-default shadow">
+    <div class="panel-heading"><h4>Similar posts</h4></div>
+    <div class="panel-body">
+
+    {% for post in similar_posts %}
+        <p><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></p>
+    {% empty %}
+        There are no similar posts yet.
+    {% endfor %}
+     </div>
+    </div>
+     <div class="panel panel-default shadow">
+    <div class="panel-body">
+    {% with comments.count as total_comments %}
+        <h4>{{ total_comments }} comment{{ total_comments|pluralize }}:</h4>
+    {% endwith %}
+
+    {% for comment in comments %}
+        <div class="comment">
+            <p class="info">Comment {{ forloop.counter }} by {{ comment.name }} {{ comment.created }}</p>
+            {{ comment.body|markdown }}
+
+        </div>
+    {% empty %}
+        <p>There are no comments yet.</p>
+    {% endfor %}
+      </div>
+    </div>
+
+    {% if new_comment %}
+        <h2>Your comment has been added.</h2>
+    {% else %}
+        <h4>Add a new comment:</h4>
+        <form action="." method="post">
+            {{ comment_form.as_p }}
+            {% csrf_token %}
+
+            <p><input type="submit" value="Add comment"></p>
+        </form>
+    {%  endif %}
+
+{% endblock %}

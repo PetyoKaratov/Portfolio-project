@@ -39,7 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'taggit',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+
+
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,7 +88,7 @@ DATABASES = {
         'USER':'postgres',
         'PASSWORD':'asdqwe123',
         'HOST':'localhost',
-        'PORT':'5432'
+        'PORT':'5432',
     }
 }
 
@@ -135,7 +141,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'petyokaratov@gmail.com'
+EMAIL_HOST_PASSWORD = 'somepassword'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+SITE_ID = 1
+
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
+
+
+
+
