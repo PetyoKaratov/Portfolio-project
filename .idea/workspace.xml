@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca2259d5-50c7-4057-82dc-1df30fd110cd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/feeds.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/forms.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/sitemaps.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/templates/blog/post/latest_posts.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/templates/blog/post/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/templates/blog/post/share.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/templates/pagination.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/templatetags/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" afterPath="$PROJECT_DIR$/blog/admin.py" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/allblogs.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/detail.html" afterPath="$PROJECT_DIR$/blog/templates/blog/post/detail.html" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" afterPath="$PROJECT_DIR$/blog/urls.py" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
-      <change beforePath="$PROJECT_DIR$/jobs/templates/jobs/home.html" afterPath="$PROJECT_DIR$/jobs/templates/jobs/home.html" />
       <change beforePath="$PROJECT_DIR$/portfolio/settings.py" afterPath="$PROJECT_DIR$/portfolio/settings.py" />
-      <change beforePath="$PROJECT_DIR$/portfolio/static/CV.pdf" afterPath="$PROJECT_DIR$/portfolio/static/CV.pdf" />
-      <change beforePath="$PROJECT_DIR$/portfolio/static/mypic.jpg" afterPath="$PROJECT_DIR$/portfolio/static/mypic.jpg" />
-      <change beforePath="$PROJECT_DIR$/portfolio/static/style.css" afterPath="$PROJECT_DIR$/portfolio/static/style.css" />
-      <change beforePath="$PROJECT_DIR$/portfolio/urls.py" afterPath="$PROJECT_DIR$/portfolio/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -125,8 +103,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/portfolio/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="115" column="52" lean-forward="true" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+            <state relative-caret-position="274">
+              <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -776,8 +754,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="115" column="52" lean-forward="true" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+        <state relative-caret-position="274">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
           <folding />
         </state>
       </provider>
